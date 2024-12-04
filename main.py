@@ -7,13 +7,6 @@ import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "Da"
 
-# Replace with your actual connection details
-dados_conexao = (
-    "Driver={SQL Server};"
-    "Server=DESKTOP-IFJENJ4;"  
-    "Database=games_souls;"
-)
-conexao = pyodbc.connect(dados_conexao)
 
 logado = False
 
